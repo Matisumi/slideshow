@@ -78,6 +78,7 @@ $(document).ready(function() {
     });
 
     $i1.click(function() {  // first dot
+    	
     	if (currentSlide === 3){
     		currentSlide = 1;
     		$slideContainer.animate({'margin-left': '+=' + 1800}); //from 3rd pic
