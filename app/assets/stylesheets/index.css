@@ -1,0 +1,63 @@
+.slide1 {background: red;}
+.slide2 {background: blue;}
+.slide3 {background: green;}
+
+h1 {
+    color: #484d6c;
+}
+
+#carousselcont{
+    height: 300px;
+    overflow: hidden;
+    
+}
+
+#mainNav{
+  width: 100%;
+  font-size:25px;
+  background-color:#e3a51a;
+  border: 0px solid;
+  box-shadow: 0px 5px #ffed00;
+  box-shadow:opacity:0.5;
+}
+#container{
+  color:#e3a51a; 
+  text-align: center;
+}
+
+
+#tab_2, #tab_3 {
+    display: none;
+}
+
+#slider {
+    width: 900px;
+    height: 350px;
+    overflow: hidden;
+}
+
+#slider .slides{
+
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+
+}
+
+#slider ul li{
+
+    float: left;
+    list-style-type: none;}
+
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+
