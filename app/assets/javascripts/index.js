@@ -46,15 +46,15 @@ $(document).ready(function() {
     $arrowl.click(function() {  //left arrow function
     	if (currentSlide === 1){
     		currentSlide = 3;
-    		$slideContainer.animate({'margin-left': '-=' + 1800}); //from 1 to 3 
+    		$slideContainer.animate({'margin-left': '-=' + 1800},400); //from 1 to 3 
     	}
     	else if (currentSlide === 3) {
     		currentSlide = 2;
-    		$slideContainer.animate({'margin-left': '+=' + 900}); // from 3 to 2
+    		$slideContainer.animate({'margin-left': '+=' + 900},200); // from 3 to 2
     	}
     	else if (currentSlide === 2) {
     		currentSlide = 1;
-    		$slideContainer.animate({'margin-left': '+=' + 900}); // from 2 to 1
+    		$slideContainer.animate({'margin-left': '+=' + 900},200); // from 2 to 1
     	}
     	clearInterval(interval); // clean and restart
     	autoSlider();
@@ -63,29 +63,29 @@ $(document).ready(function() {
     $arrowr.click(function() { // right arrow function
     	if (currentSlide === 3){
     		currentSlide = 1;
-    		$slideContainer.animate({'margin-left': '+=' + 1800}); // from 3 to 1
+    		$slideContainer.animate({'margin-left': '+=' + 1800},400); // from 3 to 1
     	}
     	else if (currentSlide === 1) {
     		currentSlide = 2;
-    		$slideContainer.animate({'margin-left': '-=' + 900}); // from 1 to 2
+    		$slideContainer.animate({'margin-left': '-=' + 900},200); // from 1 to 2
     	}
     	else if (currentSlide === 2) {
     		currentSlide = 3;
-    		$slideContainer.animate({'margin-left': '-=' + 900}); // from 2 to 3
+    		$slideContainer.animate({'margin-left': '-=' + 900},200); // from 2 to 3
     	}
     	clearInterval(interval); //clear and restart
     	autoSlider();
     });
 
     $i1.click(function() {  // first dot
-    	
+
     	if (currentSlide === 3){
     		currentSlide = 1;
-    		$slideContainer.animate({'margin-left': '+=' + 1800}); //from 3rd pic
+    		$slideContainer.animate({'margin-left': '+=' + 1800},400); //from 3rd pic
     	}
     	else if (currentSlide === 2) {
     		currentSlide = 1;
-    		$slideContainer.animate({'margin-left': '+=' + 900});//from 2st pic
+    		$slideContainer.animate({'margin-left': '+=' + 900},200);//from 2st pic
     	}
     	clearInterval(interval); //clear and restart
     	autoSlider();
@@ -94,11 +94,11 @@ $(document).ready(function() {
     $i2.click(function() { //second dot
     	if (currentSlide === 3){
     		currentSlide = 2;
-    		$slideContainer.animate({'margin-left': '+=' + 900}); //from 3rd pic
+    		$slideContainer.animate({'margin-left': '+=' + 900},200); //from 3rd pic
     	}
     	else if (currentSlide === 1) {
     		currentSlide = 2;
-    		$slideContainer.animate({'margin-left': '-=' + 900});//from 2nd pic
+    		$slideContainer.animate({'margin-left': '-=' + 900},200);//from 2nd pic
     	}
     	clearInterval(interval); //clear and restart
     	autoSlider();
@@ -107,11 +107,11 @@ $(document).ready(function() {
     $i3.click(function() {  //third dot
     	if (currentSlide === 1){
     		currentSlide = 3;
-    		$slideContainer.animate({'margin-left': '-=' + 1800});//from 1st pic
+    		$slideContainer.animate({'margin-left': '-=' + 1800},400);//from 1st pic
     	}
     	else if (currentSlide === 2) {
     		currentSlide = 3;
-    		$slideContainer.animate({'margin-left': '-=' + 900});//from 2nd pic
+    		$slideContainer.animate({'margin-left': '-=' + 900},200);//from 2nd pic
     	}
     	clearInterval(interval); //clear and restart
     	autoSlider();
